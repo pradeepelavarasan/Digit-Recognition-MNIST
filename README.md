@@ -20,6 +20,10 @@ This repository is about creating an optimized custom CNN model for Number Recog
 ### Batch-Normalization
 ### Dropout
 ### Remove Bias
+### Maxpool
+### 1\*1 filter
+### Activation Function
+
 
 
 ## Validation Accuracy Log
