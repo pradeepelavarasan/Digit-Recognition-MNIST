@@ -17,7 +17,7 @@ This repository is about creating an optimized custom CNN model for Number Recog
 - Validation Accuracy: 99.41%
 
 ## Strategy: 
-Below is the strategy behind which the model is built. This was arrived by incrementally improving models at every steps
+Below is the strategy behind which the model is built. This was arrived by incrementally improving models at every step
 ### No. of Channels
    Use 16 channels for all the layers, as 32 channels was taking of too many parameters and 8 channels was given low accuracy than required.
 ### Batch-Normalization
@@ -29,7 +29,7 @@ Below is the strategy behind which the model is built. This was arrived by incre
 ### Maxpool
    We perform 1 transition block with Maxpool to reduce the size of image (x and y axis).
 ### 1\*1 filter
-   We perform 1 transition block with 1*1 convolution to reduce the depth/channels of layer (z axis).
+   We perform 1 transition block with 1*\1 convolution to reduce the depth/channels of layer (z axis). Both 1\*1 and maxpool are part of the transition block
 ### Activation Function
    We use relu activation function in all layers except the last year. Relu is the simple and most accepted activation function in academic research. Activation function is used to support no-linear functions. 
 
