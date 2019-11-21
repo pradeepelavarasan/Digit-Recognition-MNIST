@@ -16,7 +16,11 @@ This repository is about creating an optimized custom CNN model for Number Recog
 - Validation Accuracy: 99.41%
 
 ## Strategy:
-- 
+### No. of Channels
+### Batch-Normalization
+### Dropout
+### Remove Bias
+
 
 ## Validation Accuracy Log
 score = model.evaluate(X_test, Y_test, verbose=0)
