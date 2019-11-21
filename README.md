@@ -18,7 +18,7 @@ This repository is about creating an optimized custom CNN model for Number Recog
 ## Strategy:
 - 
 
-## Validation Accuracy
+## Validation Accuracy Log
 score = model.evaluate(X_test, Y_test, verbose=0)
 print(score)
 [0.01831436900636472, 0.9941]
