@@ -12,8 +12,8 @@ This repository is about creating an optimized custom CNN model for Number Recog
 - Total params: 13,904
 - Trainable params: 13,712
 - Non-trainable params: 192
-- Training Accurary: 99.05
-- Validation Accuracy: 99.41
+- Training Accurary: 99.05%
+- Validation Accuracy: 99.41%
 
 ## Strategy:
 - 
