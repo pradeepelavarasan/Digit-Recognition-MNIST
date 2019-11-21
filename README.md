@@ -19,19 +19,19 @@ This repository is about creating an optimized custom CNN model for Number Recog
 ## Strategy: 
 Below is the strategy behind which the model is built. This was arrived by incrementally improving models at every steps
 ### No. of Channels
-    Use 16 channels for all the layers, as 32 channels was taking of too many parameters and 8 channels was given low accuracy than required.
+   Use 16 channels for all the layers, as 32 channels was taking of too many parameters and 8 channels was given low accuracy than required.
 ### Batch-Normalization
-    Use batch normalization at all the layers except the last layer. This will help to normalize values accross multiple images.
+   Use batch normalization at all the layers except the last layer. This will help to normalize values accross multiple images.
 ### Dropout
-    Use drop out at all layers except the last layer. Drop out of 10% was too low and 25% was too high, so we are using 20%
+   Use drop out at all layers except the last layer. Drop out of 10% was too low and 25% was too high, so we are using 20%
 ### Remove Bias
-    The concept of bias parameters is not relevant for us in our current CNN model. It was originally meant to support the equation of y=mx+c in fully connected layers for the case where the intialization of parameters is at zero. 
+   The concept of bias parameters is not relevant for us in our current CNN model. It was originally meant to support the equation of y=mx+c in fully connected layers for the case where the intialization of parameters is at zero. 
 ### Maxpool
-    We perform 1 transition block with Maxpool to reduce the size of image (x and y axis).
+   We perform 1 transition block with Maxpool to reduce the size of image (x and y axis).
 ### 1\*1 filter
-    We perform 1 transition block with 1*1 convolution to reduce the depth/channels of layer (z axis).
+   We perform 1 transition block with 1*1 convolution to reduce the depth/channels of layer (z axis).
 ### Activation Function
-    We use relu activation function in all layers except the last year. Relu is the simple and most accepted activation function in academic research. Activation function is used to support no-linear functions. 
+   We use relu activation function in all layers except the last year. Relu is the simple and most accepted activation function in academic research. Activation function is used to support no-linear functions. 
 
 Note that : In the last layer, we dont use activation, batch normalization, dropout, maxpool, etc as we dont the values close to the output be altered much. 
 
